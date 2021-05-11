@@ -56,8 +56,8 @@ function local() {
     });
 
 }
-
-local();
+if(localStorage.getItem('notes')!=null){
+local();}
 
 button.addEventListener('click', function () {
     c=c+1;
